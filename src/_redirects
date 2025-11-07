@@ -1,0 +1,3 @@
+# Cloudflare Pages重定向配置
+# 处理SPA路由，确保所有路径都指向index.html
+/* /index.html 200

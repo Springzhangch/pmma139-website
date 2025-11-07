@@ -1,0 +1,15 @@
+# Cloudflare Workers配置文件
+name = "yuefeng-acrylic"
+main = "dist/worker.js"
+compatibility_date = "2025-11-06"
+compatibility_flags = ["nodejs_compat"]
+
+[env.production]
+workers_dev = false
+route = "https://your-domain.com/*"
+zone_id = "your-zone-id"
+
+# 构建配置
+[build]
+command = "pnpm build"
+upload.format = "service-worker"
